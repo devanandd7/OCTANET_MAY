@@ -1,0 +1,79 @@
+.header {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(35, 18, 11);
+    justify-content: center;
+    
+    text-align: center;
+    color: aliceblue;
+   
+
+}
+
+.himg{
+    display: flex;
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    z-index: 1;
+   
+}
+.blur{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(55, 62, 62, 0.349);
+    position: absolute;
+    z-index: 2;
+}
+.htext{
+    display: flex;
+    position: absolute;
+    z-index: 3;
+    font-size: 10rem;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px  black;
+  
+
+}
+
+.middle{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.img{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.599) 5px 10px 15px;
+    z-index: 5;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: 300px; /* Adjust the height for smaller screens */
+      
+    }
+    .htext {
+        font-size: 6rem; /* Decrease font size for readability */
+    }
+    .middle{
+        flex-direction: column;
+        height: fit-content;
+    }
+    /* Add any other necessary adjustments for smaller screens */
+}
+
+/* Media query for larger screens (e.g., desktops) */
+@media screen and (min-width: 1200px) {
+    .header {
+        height: 700px; /* Adjust the height for larger screens */
+    }
+    /* Add any other necessary adjustments for larger screens */
+}
